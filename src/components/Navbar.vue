@@ -10,10 +10,10 @@
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
          <b-navbar-nav>
-        <b-nav-item href="#">Home</b-nav-item>
-        <b-nav-item href="#">About</b-nav-item>
-        <b-nav-item href="#">Services</b-nav-item>
-        <b-nav-item href="#">Contact</b-nav-item>
+        <b-nav-item :to="{name: 'Home'}">Home</b-nav-item>
+        <b-nav-item :to="{name: 'About'}">About</b-nav-item>
+        <b-nav-item :to="{name: 'Services'}">Services</b-nav-item>
+        <b-nav-item :to="{name: 'Contact'}">Contact</b-nav-item>
       </b-navbar-nav>
       </b-navbar-nav>
     </b-collapse>
