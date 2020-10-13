@@ -1,7 +1,7 @@
 <template>
     <div>
-  <b-navbar toggleable="lg" type="dark" variant="info">
-    <b-navbar-brand href="#">VueSPA</b-navbar-brand>
+  <b-navbar class="navb" toggleable="lg" type="dark" variant="info">
+    <b-navbar-brand :to="{name: 'Home'}"> <img class="logo" :src="Logo" alt="Logo"> </b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -10,7 +10,7 @@
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
          <b-navbar-nav>
-        <b-nav-item :to="{name: 'Home'}">Home</b-nav-item>
+        <b-nav-item :to="{name: 'Home'}" exact>Home</b-nav-item>
         <b-nav-item :to="{name: 'About'}">About</b-nav-item>
         <b-nav-item :to="{name: 'Services'}">Services</b-nav-item>
         <b-nav-item :to="{name: 'Contact'}">Contact</b-nav-item>
@@ -22,19 +22,31 @@
 </template>
 
 <script>
+import Logo from '../assets/Sociolify.png'
 export default {
     data(){
         return{
-
+           Logo: Logo
         }
     }
 }
 </script>
 
 <style scoped>
+.navb{
+  background: #375d4e !important;
+}
 
 .bg-info{
     padding: 10px 30px;
+}
+
+.logo{
+  width: 7em;
+}
+
+a.router-link-active{
+  color: #fff !important;
 }
 
 </style>
