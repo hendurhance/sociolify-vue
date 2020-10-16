@@ -1,9 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from '../views/Home.vue'
-import About from '../views/About.vue'
-import Services from '../views/Services.vue'
-import Contact from '../views/Contact.vue'
+import Login from '../views/Login.vue'
+import Signup from '../views/Signup.vue'
 
 Vue.use(Router);
 export default new Router({
@@ -15,19 +14,14 @@ export default new Router({
         component: Home
       },
       {
-        path: '/about',
-        name: 'About',
-        component: About
+        path: '/login',
+        name: 'Login',
+        component: Login
       },
       {
-        path: '/services',
-        name: 'Services',
-        component: Services
-      },
-      {
-        path: '/contact',
-        name: 'Contact',
-        component: Contact
+        path: '/signup',
+        name: 'Signup',
+        component: Signup
       }
     ]
   });

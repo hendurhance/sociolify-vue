@@ -11,9 +11,8 @@
       <b-navbar-nav class="ml-auto">
          <b-navbar-nav>
         <b-nav-item :to="{name: 'Home'}" exact>Home</b-nav-item>
-        <b-nav-item :to="{name: 'About'}">About</b-nav-item>
-        <b-nav-item :to="{name: 'Services'}">Services</b-nav-item>
-        <b-nav-item :to="{name: 'Contact'}">Contact</b-nav-item>
+        <b-nav-item :to="{name: 'Login'}">Login</b-nav-item>
+        <b-nav-item :to="{name: 'Signup'}">Signup</b-nav-item>
       </b-navbar-nav>
       </b-navbar-nav>
     </b-collapse>

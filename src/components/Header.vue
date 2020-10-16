@@ -45,7 +45,7 @@ section{
 }
 
 .header{
-    height: 86vh;
+    height: 100vh;
 }
 .h1{
     margin-top: 3em;
@@ -83,5 +83,6 @@ h1{
     border-radius: 20px !important;
     border: 0;
 }
+
 
 </style>

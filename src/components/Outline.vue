@@ -1,8 +1,8 @@
 <template>
     <b-container fluid>
-        <b-row>
+        <b-row no-gutters>
             <b-col v-for="(content, index) in contents" :key="index" lg="3">
-                <div v-colormix>
+                <div v-colormix class="outline">
                    <div v-html="content.icon" class="icon"></div>
                    <div class="text"> <h2>{{content.text}}</h2> </div>
                 </div>
@@ -15,7 +15,6 @@
 export default {
     data(){
         return{
-            colors: [{color: "eefeee"}, {color: "ccffcc"}, {color: "669966"}, {color: "3f683f"}],
             contents: [
                 {
                     icon: '<i class="fas fa-search outline-icon"></i>',
@@ -36,15 +35,11 @@ export default {
             ]
         }
     },
-    // methods:{
-    //     splitColor: function(){
-    //         console.log(this.colors.color)
-    //     }
-    // },
     directives:{
         'colormix': {
             bind(el){
                 el.style.background = "#" + 669966;
+                el.style.color = "#" + "f5f3f3";
             }
         }
     }
@@ -52,6 +47,23 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+*{
+    padding: 0 !important;
+}
+.outline{
+    padding: 20px 35px !important;
+    display: flex;
+}
+
+.icon{
+    font-size: 40px;
+}
+
+.text{
+    margin-left: 10px;
+    font-weight: bolder;
+    font-size: 1em;
+}
 
 </style>
