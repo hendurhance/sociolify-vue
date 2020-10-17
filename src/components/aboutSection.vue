@@ -3,13 +3,14 @@
         <b-container>
             <b-row>
                 <b-col>
-                    <div class="iamge">
-
+                    <div class="image">
+                        <img class="img-fluid" :src="Markerting" alt="">
                     </div>
                 </b-col>
                 <b-col>
                     <div class="text">
-
+                        <h3>Crafting Out A Niche For Your Business</h3>
+                        <p>Because advertising and marketing is an art, the solution to each new problem challenge should begin with a blank canvas and open mind, not with nervous borrowings of other people's mediocrities precisely modern.</p>
                     </div>
                 </b-col>
             </b-row>
@@ -18,11 +19,42 @@
 </template>
 
 <script>
+import Markerting from '../assets/marketing.svg';
+
 export default {
-    
+    data(){
+        return{
+          Markerting: Markerting
+       }
+    }
 }
 </script>
 
 <style scoped>
-
+section{
+    padding: 4em 8em !important;
+    background-color: #f1f4f1;
+}
+.image img{
+    width: 20em;
+}
+.text{
+    margin: 0 auto;
+}
+.text h3{
+    font-weight:700;
+}
+.text h3::after{
+    content: "";
+    width: 10%;
+    margin-top: 0.7em;
+    height: 3px;
+    display: block;
+    background: #375d4e;
+}
+.text p{
+    font-size: 1.2em;
+    margin-top: 1.5em;
+    font-weight: 500;
+}
 </style>
