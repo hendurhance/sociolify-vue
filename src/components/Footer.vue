@@ -4,7 +4,9 @@
          <b-row>
              <b-col lg="4" md="12" sm="12">
                  <div class="content">
+                     <div class="content-img">
                      <img :src="Logo" alt="">
+                     </div>
                  </div>
              </b-col>
              <b-col lg="4" md="12" sm="12">
@@ -58,6 +60,10 @@ footer{
 }
 .content{
     margin: 0 auto;
+}
+.content-img{
+    display: flex;
+    justify-content: center;
 }
 .content h4{
     text-align: center;
