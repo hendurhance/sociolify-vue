@@ -7,6 +7,7 @@
      <why-us></why-us>
      <testimonials></testimonials>
      <blog></blog>
+     <app-contact></app-contact>
 </div>
 </template>
 
@@ -18,6 +19,7 @@ import Services from '../components/Services.vue'
 import whyUs from '../components/whyUs.vue'
 import Testimonials from '../components/Testimonials.vue'
 import Blog from '../components/Blog.vue'
+import Contact from '../components/Contact.vue'
 
 export default {
     components:{
@@ -27,7 +29,8 @@ export default {
         'services': Services,
         'why-us': whyUs,
         'testimonials': Testimonials,
-        'blog': Blog
+        'blog': Blog,
+        'app-contact': Contact
     }
 }
 </script>
